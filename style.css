@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-slider{
+    width: 80%;
+    height: 80%;
+    box-shadow: 20px 20px 10px black  ;
+    animation: slider 10s linear infinite; 
+    background-size: 100% 100%;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(photo-1.jpeg);
+    }
+    25%{
+        background-image: url(photo-2.jpg);
+    }
+    50%{
+        background-image: url(photo-3.jpg);
+    }
+    75%{
+        background-image: url(photo-4.jpg);
+    }
+    100%{
+        background-image: url(photo-1.jpeg);
+    }
+}
